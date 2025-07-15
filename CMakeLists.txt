@@ -106,8 +106,8 @@ endif()
 
 string(TOLOWER "${CMAKE_BUILD_TYPE}" BUILD_TYPE_LOWER_CASE)
 
-option(UA_ENABLE_AMALGAMATION "Concatenate the library to a single file open62541.h/.c" OFF)
-option(BUILD_SHARED_LIBS "Enable building of shared libraries (dll/so)" OFF)
+option(UA_ENABLE_AMALGAMATION "Concatenate the library to a single file open62541.h/.c" ON)#OFF
+option(BUILD_SHARED_LIBS "Enable building of shared libraries (dll/so)" ON)#OFF
 set(UA_LOGLEVEL 100 CACHE STRING "Minimal level for logs (in addition to the log plugin settings) (100=TRACE, 200=DEBUG, 300=INFO, 400=WARNING, 500=ERROR, 600=FATAL)")
 option(UA_ENABLE_DIAGNOSTICS "Enable diagnostics information exposed by the server" ON)
 option(UA_ENABLE_METHODCALLS "Enable the Method service set" ON)
